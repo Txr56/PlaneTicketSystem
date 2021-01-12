@@ -1,3 +1,5 @@
+package bean;
+
 public class Order {
     private String id;
     private float jpJg;//机票价格

@@ -1,3 +1,5 @@
+package bean;
+
 import java.sql.Date;
 
 public class Customer {
