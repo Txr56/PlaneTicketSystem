@@ -4,11 +4,11 @@ import bean.Flight;
 
 import java.util.Set;
 
-public interface IFlightDao {
-   void insertFlight(Flight flight);
-   Set<Flight> getAllFlights();
-   Flight getFlightByDepartureTime(String departureTime);
-   Flight getFlightByDepartureAirPort(String departureAirport);
-   Flight getFlightByDestinationAirPort(String destinationAirPort);
-   void updateFlight(Flight flight);
+public class FlightServiceImpl implements IFlightService {
+
+   IflightDao iflightDao;
+
+   public FlightServiceImpl(IflightDao iflightDao) {
+      this.iflightDao = iflightDao;
+   }
 }
